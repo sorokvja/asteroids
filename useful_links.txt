@@ -1,0 +1,5 @@
+https://www.pygame.org/docs/ref/pygame.html 
+https://gameprogrammingpatterns.com/game-loop.html 
+https://realpython.com/python-while-loop/#infinite-loops 
+https://www.pygame.org/docs/ref/surface.html#pygame.Surface.fill
+https://www.pygame.org/docs/ref/display.html#pygame.display.flip
