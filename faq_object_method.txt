@@ -1,0 +1,85 @@
+______________________
+What Is an Object?
+______________________
+
+An object is like a bundle of related properties and behaviors. It's a way to organize data and actions. For example:
+- Properties are the object's traits (e.g., height, color, speed).
+- Methods are the actions the object can perform (e.g., moving, spinning, changing color).
+
+In your code:
+    clock = pygame.time.Clock()
+
+The clock is an object that represents time-tracking in your game.
+
+Why Do We Use Objects?
+
+Objects let us group and encapsulate related data and functionality. Let's compare:
+
+Without objects:
+    time_passed = 0
+
+    def tick(fps):
+        # Hypothetical function for keeping time.
+
+Here, we'd manage everything manually and separately—values and behaviors are disconnected.
+
+With objects:
+    clock = pygame.time.Clock()
+    clock.tick(60)
+
+Now, the object (clock) manages time and provides methods like .tick(), simplifying your life!
+______________________
+What Is a Method?
+______________________
+
+A method is like a magical spell in the object’s grimoire—it lets you use the object's abilities. For example:
+    clock.tick(60) calls the .tick() method, which has been carefully crafted to limit the framerate to 60 FPS and calculate time between frames.
+
+In general:
+- You must call methods directly on an object created earlier (stored in a variable, such as clock).
+- Methods often rely on the object's hidden state (data inside the object) and allow you to interact with it.
+
+Using methods correctly often depends on understanding what an object represents (e.g., a clock, a player, a sprite) and how it behaves.
+
+____________________________________
+Examples of Objects and Methods 
+____________________________________
+
+Example 1: The Player Object:
+
+class Player:
+    def __init__(self, name, health):
+        self.name = name
+        self.health = health
+
+    def take_damage(self, amount):
+        self.health -= amount
+        print(f"{self.name} received {amount} damage. {self.health} health left!")
+
+# Create a Player object
+wizard = Player("Gandalf", 100)
+
+# Cast the Player object's method
+wizard.take_damage(30)
+
+# Output:
+# Gandalf received 30 damage. 70 health left!
+
+Here, the Player object (wizard) has:
+
+Properties: name (Gandalf), health (100).
+Methods: take_damage, which reduces health and prints a message.
+What do you notice about how methods use the object's properties (self.health) internally?
+
+Example 2: A Simple Clock:
+
+Here’s another simplified clock object, similar to what pygame.time.Clock does:
+
+class Clock:
+    def __init__(self):
+        self.time_since_last_frame = 0
+
+    def tick(self, fps):
+        print(f"Limiting game to {fps} frames per second!")
+        self.time_since_last_frame = 1 / fps
+        return self.time
