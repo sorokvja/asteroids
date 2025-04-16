@@ -24,11 +24,14 @@ def main():
             if event.type == pygame.QUIT:
                 return
         
-        screen.fill("black")
-        player.draw(screen) 
-        pygame.display.flip()
+        screen.fill("black") # clear the screen
+
+        player.update(dt) # updates player state 
+        player.draw(screen) # renders the player
         
-        dt = clock.tick(60) / 1000 
+        pygame.display.flip() # update the display 
+        
+        dt = clock.tick(60) / 1000 # manage the clock and calculate delta time 
 
 if __name__ == "__main__":
     main() 
