@@ -8,6 +8,10 @@ from player import Player
 def main():
     pygame.init()
 
+    updatable = pygame.sprite.Group()
+    drawable = pygame.sprite.Group()
+    Player.containers = (updatable, drawable) 
+
     clock = pygame.time.Clock()
     dt = 0
 
@@ -26,8 +30,11 @@ def main():
         
         screen.fill("black") # clear the screen
 
-        player.update(dt) # updates player state 
-        player.draw(screen) # renders the player
+        #player.update(dt) # updates player state 
+        #player.draw(screen) # renders the player
+        updatable.update(dt)
+        for object in drawable:
+            object.draw(screen)
         
         pygame.display.flip() # update the display 
         

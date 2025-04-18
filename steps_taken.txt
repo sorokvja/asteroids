@@ -26,3 +26,4 @@ Failing command: /home/vuser/workspace/github.com/sorokvja/asteroids/venv/bin/py
 11.2. nano main.py # importing values from constants.py 
 11.3. further modified main.py by adding an infinite loop
 12. added .gitignore 
+13. coding and pushing updated to GitHub
