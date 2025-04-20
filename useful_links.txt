@@ -11,3 +11,5 @@ https://www.pygame.org/docs/ref/draw.html#pygame.draw.polygon
 https://www.pygame.org/docs/ref/key.html
 https://en.wikipedia.org/wiki/Unit_vector
 https://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Group 
+https://www.pygame.org/docs/ref/draw.html#pygame.draw.circle
+https://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Group
