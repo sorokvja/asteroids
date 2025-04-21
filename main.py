@@ -1,7 +1,7 @@
 # this allows us to use code from
 # the open-source pygame library
 # throughout this file
-import pygame
+import pygame, sys
 from constants import * 
 from player import Player 
 from asteroid import Asteroid 
@@ -36,7 +36,15 @@ def main():
 
         #player.update(dt) # updates player state 
         #player.draw(screen) # renders the player
-        updatable.update(dt)
+        updatable.update(dt) # updates all objects' state 
+        
+        # add collision detection
+        for asteroid in asteroids:
+            if player.collision(asteroid) :
+                print("Game over!")
+                sys.exit()
+        
+        # draw everything 
         for object in drawable:
             object.draw(screen)
         
@@ -46,4 +54,3 @@ def main():
 
 if __name__ == "__main__":
     main() 
-

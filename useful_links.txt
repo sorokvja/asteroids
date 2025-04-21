@@ -1,3 +1,6 @@
+https://www.pygame.org/news
+https://peps.python.org/pep-0008/#imports 
+https://docs.python.org/3/reference/simple_stmts.html#import
 
 https://docs.python.org/3/library/venv.html
 https://www.pygame.org/docs/ref/pygame.html 
@@ -13,3 +16,7 @@ https://en.wikipedia.org/wiki/Unit_vector
 https://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Group 
 https://www.pygame.org/docs/ref/draw.html#pygame.draw.circle
 https://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Group
+https://en.wikipedia.org/wiki/Collision_detection
+https://www.pygame.org/docs/ref/math.html#pygame.math.Vector2
+https://www.pygame.org/docs/ref/math.html#pygame.math.Vector2.distance_to 
+https://docs.python.org/3/library/sys.html#sys.exit
