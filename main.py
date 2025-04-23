@@ -23,7 +23,7 @@ def main():
     clock = pygame.time.Clock()
     dt = 0
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT)) 
-    player = Player(SCREEN_WIDTH /2, SCREEN_HEIGHT / 2)
+    player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     asteroid_field = AsteroidField()
 
     print("Starting Asteroids!") 
@@ -46,6 +46,11 @@ def main():
             if player.collision(asteroid) :
                 print("Game over!")
                 sys.exit()
+            # add asteroid destruction
+            for shot in shots:
+                if shot.collision(asteroid):
+                    asteroid.kill()
+                    shot.kill()
         
         # draw everything 
         for object in drawable:
