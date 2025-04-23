@@ -20,3 +20,6 @@ https://en.wikipedia.org/wiki/Collision_detection
 https://www.pygame.org/docs/ref/math.html#pygame.math.Vector2
 https://www.pygame.org/docs/ref/math.html#pygame.math.Vector2.distance_to 
 https://docs.python.org/3/library/sys.html#sys.exit
+https://docs.python.org/3/library/random.html
+https://docs.python.org/3/library/random.html#random.uniform
+https://www.pygame.org/docs/ref/math.html#pygame.math.Vector2.rotate

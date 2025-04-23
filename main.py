@@ -49,7 +49,8 @@ def main():
             # add asteroid destruction
             for shot in shots:
                 if shot.collision(asteroid):
-                    asteroid.kill()
+                    #asteroid.kill()
+                    asteroid.split()
                     shot.kill()
         
         # draw everything 
